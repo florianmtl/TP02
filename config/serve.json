@@ -9,7 +9,8 @@
         "47ef2413-bf9d-41ad-9f17-78449c4770e4": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "testMessage": "Bienvenue sur notre sharepoint"
+            "Top": "Haut de la page",
+            "Bottom": "Bas de la page"
           }
         }
       }
