@@ -8,7 +8,7 @@ import {
 import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'HelloWorldApplicationCustomizerStrings';
-import styles from  './AppCustomizer.module.scss';
+import styles from './AppCustomizer.module.scss';
 import { escape } from '@microsoft/sp-lodash-subset';
 
 const LOG_SOURCE: string = 'HelloWorldApplicationCustomizer';
@@ -18,8 +18,7 @@ const LOG_SOURCE: string = 'HelloWorldApplicationCustomizer';
  * it will be deserialized into the BaseExtension.properties object.
  * You can define an interface to describe it.
  */
-export interface IHelloWorldApplicationCustomizerProperties {
-  // This is an example; replace with your own property
+ export interface IHelloWorldApplicationCustomizerProperties {
   Top: string;
   Bottom: string;
 }
@@ -32,15 +31,16 @@ export default class HelloWorldApplicationCustomizer
   private _topPlaceholder: PlaceholderContent | undefined;
   private _bottomPlaceholder: PlaceholderContent | undefined;
 
+
   @override
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
-
+  
     // Wait for the placeholders to be created (or handle them being changed) and then
     // render.
     this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);
   
-    return Promise.resolve<void>();
+    return Promise.resolve();
   }
 
   private _renderPlaceHolders(): void {

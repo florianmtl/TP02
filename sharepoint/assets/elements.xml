@@ -4,6 +4,6 @@
         Title="HelloWorld"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="47ef2413-bf9d-41ad-9f17-78449c4770e4"
-        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+        ClientSideComponentProperties="{&quot;Top&quot;:&quot;Top area of the page&quot;,&quot;Bottom&quot;:&quot;Bottom area in the page&quot;}">
     </CustomAction>
 </Elements>
